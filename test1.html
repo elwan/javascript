@@ -1,0 +1,77 @@
+<html>
+<head>
+
+</head>
+<body>
+<script type ="text/javascript">
+	
+	document.write("salut  first test javascript");
+	document.write(" second test javascript");
+	var x=12.00002 ;
+	var  a=14.004;
+	var  z=x+a;
+	var y="text in here ";
+	document.write(" "+z+" "+y);
+	function elwan(){
+		
+		alert("yes  elwan great!!!");
+		}
+	function elou(x){
+		alert("i love "+x); 
+	}
+	//elou("javascript");
+	//elou(7);
+	//elou("python and javascript");
+	//function with a many parametres
+	function select(x,y){
+		document.write(x +" is better than "+y +"<br />");
+	}
+	select("linux","windows");
+	select("Hp","Acer");
+	//functioryn with a many parametres
+	function add(x,y){
+		return x+y ;
+	}
+	document.write(add("elwan","ndiaye"));
+	//function with a many parametres
+	function sous(x,y){
+		return x-y;
+	}
+	//function call many function
+	function operation(){
+		document.write(add(3,4));
+		document.write(sous(4,3));
+	}
+	operation();
+	var test="elwan";
+			document.write(test);
+			function controle(){
+				
+			alert("Entrer votre nom "+"<br />");
+				}
+			if(test){
+			document.write(" i love js"+"<br />");
+			
+			}
+			else{
+				document.write(" i love python");
+			}
+			var prgrm="c";
+			switch(prgrm){
+				case "python":
+					document.write("python is a best"+"<br />");
+					break;
+				case "js":
+					document.write("js is simple"+"<br />");
+					break;
+				default:
+					document.write("choisissez un programme"+"<br />");
+			}
+</script>		
+	<form>
+	<input type="button"  value="elwan" onclick="elwan()" >
+	</form>
+
+
+</body>
+</html>
