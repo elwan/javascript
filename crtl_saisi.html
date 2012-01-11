@@ -1,0 +1,39 @@
+<html>
+	<head></head>
+	<body>
+		<form name="f1">
+			Username: <input type="text" name ="message"  />
+			Password:<input type="password" name="password" />
+			sexe :<input type=checkbox name ="checkbox" />test check 
+			<input type="submit" value="send" onclick="controle()" />
+			
+		</form>
+		<script type="text/javascript">
+			//alert(document.f1.message.value);	
+			var x= document.forms["f1"].length;
+			document.write("nombrer items in form "+x);
+			var name = document.f1.message.value
+			
+				
+			function controle(){
+				
+				if (document.f1.message.value == "" ||  document.f1.password.value == "" ){
+					alert("verifier  que le champ username et password ne sont pas vide !!! ");
+					
+				}
+					
+				else{
+				
+						if(!document.f1.checkbox.checked)
+							{
+								alert("valider le bouton checkbox");
+							}
+						else 
+							alert(" it's ok !!!");
+				
+				}
+			}
+		</script>
+		
+	</body>
+</html>
